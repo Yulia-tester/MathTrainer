@@ -8,7 +8,7 @@
 import UIKit
 
 enum MathTypes: Int {
-    case add, subtract, miltiply, divide
+    case add, subtract, multiply, divide
 }
 
 class ViewController: UIViewController {
