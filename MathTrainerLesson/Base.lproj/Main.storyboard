@@ -298,6 +298,12 @@
                                     <action selector="rightAction:" destination="fIw-7y-p5g" eventType="touchUpInside" id="Rnc-a7-jRw"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xei-gh-u2O">
+                                <rect key="frame" x="142.33333333333334" y="214.66666666666666" width="108.33333333333334" height="32.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="27"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="reX-PY-BM1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -306,6 +312,8 @@
                             <constraint firstItem="KYw-C6-e6f" firstAttribute="centerY" secondItem="8SC-Ie-zZt" secondAttribute="centerY" constant="-30" id="6YI-cV-eBF"/>
                             <constraint firstItem="LCw-bq-kZI" firstAttribute="centerY" secondItem="bWG-v6-eNN" secondAttribute="centerY" id="91j-11-B7c"/>
                             <constraint firstItem="bWG-v6-eNN" firstAttribute="centerX" secondItem="8SC-Ie-zZt" secondAttribute="centerX" constant="-60" id="Fd1-3c-BL6"/>
+                            <constraint firstItem="KYw-C6-e6f" firstAttribute="top" secondItem="xei-gh-u2O" secondAttribute="bottom" constant="120" id="L1O-DR-vCc"/>
+                            <constraint firstItem="xei-gh-u2O" firstAttribute="centerX" secondItem="8SC-Ie-zZt" secondAttribute="centerX" id="NZc-xX-695"/>
                             <constraint firstItem="KYw-C6-e6f" firstAttribute="centerX" secondItem="8SC-Ie-zZt" secondAttribute="centerX" id="Svd-IW-k3b"/>
                             <constraint firstItem="KCB-An-QdA" firstAttribute="top" secondItem="reX-PY-BM1" secondAttribute="top" constant="50" id="sQP-tu-y9d"/>
                             <constraint firstItem="LCw-bq-kZI" firstAttribute="centerX" secondItem="8SC-Ie-zZt" secondAttribute="centerX" constant="60" id="uB4-LF-igy"/>
@@ -317,12 +325,13 @@
                         <outlet property="leftButton" destination="bWG-v6-eNN" id="efV-gT-1oU"/>
                         <outlet property="questionLabel" destination="KYw-C6-e6f" id="Qxv-xj-Ni9"/>
                         <outlet property="rightButton" destination="LCw-bq-kZI" id="SBM-nK-38r"/>
+                        <outlet property="scoreLabel" destination="xei-gh-u2O" id="A3f-up-WCs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="owc-bB-vKa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="NRq-Uq-V0R" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1040" y="4"/>
+            <point key="canvasLocation" x="1038.9312977099237" y="3.5211267605633805"/>
         </scene>
     </scenes>
     <resources>
