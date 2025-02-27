@@ -215,6 +215,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="addLabel" destination="of3-2x-PC3" id="YfS-lV-95N"/>
+                        <outlet property="divideLabel" destination="pkA-dd-W5e" id="LVu-Qe-mtG"/>
+                        <outlet property="multiplyLabel" destination="wHs-6o-z3l" id="NSg-c8-wWk"/>
+                        <outlet property="subtractLabel" destination="Ow9-HD-2eb" id="our-DX-IyZ"/>
                         <outletCollection property="buttonsCollection" destination="4tE-ib-9UU" collectionClass="NSMutableArray" id="xw6-xR-mrq"/>
                         <outletCollection property="buttonsCollection" destination="gJf-35-OrT" collectionClass="NSMutableArray" id="Z13-vg-weM"/>
                         <outletCollection property="buttonsCollection" destination="aZy-8p-Gna" collectionClass="NSMutableArray" id="WSo-tQ-USX"/>
