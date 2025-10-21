@@ -45,6 +45,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         configureButtons()
+        setCountLabels()
     }
     
     // MARK: - Actions
@@ -53,6 +54,16 @@ class ViewController: UIViewController {
         performSegue(withIdentifier: "goToNext", sender: sender)
     }
     
+    @IBAction func clearAction(_ sender: Any) {
+        MathTypes.allCases.forEach { type in
+            let key = type.key
+            UserDefaults.standard.removeObject(forKey: key)
+            addLabel.text = "-"
+            subtractLabel.text = "-"
+            multiplyLabel.text = "-"
+            divideLabel.text = "-"
+        }
+    }
     
     @IBAction func unwindAction(unwindSegue: UIStoryboardSegue) {
         setCountLabels()

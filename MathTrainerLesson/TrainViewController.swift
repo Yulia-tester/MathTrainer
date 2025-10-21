@@ -43,9 +43,11 @@ final class TrainViewController: UIViewController {
     private var sign: String = ""
     private var count: Int = 0 {
         didSet {
-            scoreLabel.text = "Count: \(count)"
+            //scoreLabel.text = "Count: \(count)"
+
+            print("Count: \(count)")
             // Save count by type
-            UserDefaults.standard.setValue(count, forKey: type.key)
+            UserDefaults.standard.set(count, forKey: type.key)
         }
     }
     
@@ -150,6 +152,7 @@ final class TrainViewController: UIViewController {
     }
 }
 
+// Сохраняем свое хранилище
 extension UserDefaults {
     static let container = UserDefaults(suiteName: "container")
 }
